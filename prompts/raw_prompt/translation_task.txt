@@ -1,0 +1,33 @@
+<<<<<SYSTEM>>>>>
+
+<task>
+translate english into korean considering the below : 
+
+1. make three different (but same meaning, same tone, same style) setences per a english sentence
+2. translated setence should be accurate, natural,fluent, contextual-consistent, factual-consistent, cutural-appropriate,  
+3. give me your ouput with json scheme 
+4. give me only json 
+</task>
+
+<input example>
+sample given english sentence#1
+sample given english sentence#2
+</input example>
+
+<output example>
+{
+	"input" : ["sample given english setence#1", "sample given english sentence#2"],
+	"ouput":[
+		[sample transted korean setence for #1", "sample translated korean sentence for #1", "sample translated korean setence for #1"],
+		[sample transted korean setenc for #2", "sample translated korean sentence for #2", "sample translated korean setence #2"]
+	]
+
+}
+</output example>
+
+
+<<<<<USER>>>>>
+Feeling hungry, we grabbed a pizza from the fridge and microwaved it.
+The video chronologically shows the son's finger stuck in a hole of the dog house, the rescue process by paramedics, and the conclusion of the entire incident.
+
+{"input": [

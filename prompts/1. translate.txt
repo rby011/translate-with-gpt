@@ -1,0 +1,21 @@
+<task>
+translate {src_lang} into {dst_lang} considering the below : 
+
+1. make three different (but same meaning, same tone, same style) setences per a english sentence
+2. translated sentence should be accurate, natural, fluent, contextual-consistent, factual-consistent, cutural-appropriate  
+</task>
+
+<input example>
+sample given {src_lang} sentence#1
+sample given {src_lang} sentence#2
+</input example>
+
+<output example>
+sample translated {dst_lang} sentence for #1 
+sample translated {dst_lang} sentence for #1
+sample translated {dst_lang} sentence for #1
+
+sample translated {dst_lang} sentence for #2
+sample translated {dst_lang} sentence for #2
+sample translated {dst_lang} sentence for #2
+</output example>

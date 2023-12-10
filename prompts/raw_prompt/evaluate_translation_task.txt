@@ -1,0 +1,83 @@
+<task>
+evaluate the give translated result considering the below:
+
+1. input is composed with json including source sentence and three destination setences 
+2. score from 1 to 5
+3. 1 is poor and 5 is great
+4. give the reason why you give your score in korean if you score less than 3 point for the score
+5. suggest bettern translation not in the given input if you score less than 3 point for the score
+5. give me json output without additional description 
+</task>
+
+<input example>
+{
+	"source" : ["sample given english setence#1", "sample given english sentence#2"],
+	"destination":[
+		[sample transted korean setence for #1", "sample translated korean sentence for #1", "sample translated korean setence for #1"],
+		[sample transted korean setenc for #2", "sample translated korean sentence for #2", "sample translated korean setence #2"]
+	]
+
+}
+</input example>
+
+<output example>
+{
+	[ 
+           {"score": 2,
+	   "source": "sample given english setence#1"
+           "destination":"sample transted korean setence for #1"
+           "reason": ""
+	   "suggestion:"",
+           {"score": 4,
+	   "source": "sample given english setence#1"
+           "destination":"sample transted korean setence for #1"
+           "reason": "this is reason why the score is 4"
+           "suggestion:""},
+           {"score": 5,
+	   "source": "sample given english setence#1"
+           "destination":"sample transted korean setence for #1"
+           "reason": "",
+	   "suggestion:""},           
+           {"score": 2,
+	   "source": "sample given english setence#2"
+           "destination":"sample transted korean setence for #1"
+           "reason": "",
+	   "suggestion:""},
+           {"score": 4,
+	   "source": "sample given english setence#2",
+           "destination":"sample transted korean setence for #1",
+           "reason": "",
+	   "suggestion:""},
+           {"score": 4,
+	   "source": "sample given english setence#2"
+           "destination":"sample transted korean setence for #1"
+           "reason": "",
+	   "suggestion:""},
+	]
+}
+</output example>
+
+
+<<<<<USER>>>>>
+{
+	"input": [
+		"Feeling hungry, we grabbed a pizza from the fridge and microwaved it.",
+		"The video chronologically shows the son's finger stuck in a hole of the dog house, the rescue process by paramedics, and the conclusion of the entire incident."
+	],
+	"translated": [
+		[
+			"배가 고프니까 냉장고에서 피자를 꺼내서 전자레인지에 돌렸어요.",
+			"허기진 마음에 냉장고에서 피자를 하나 빼서 전자레인지로 데웠습니다.",
+			"배가 출출해서 냉장고에서 피자를 꺼내 전자레인지에 데워 먹었어요."
+		],
+		[
+			"해당 비디오에는 아들의 손가락이 개집 구멍에 낀 모습, 구조대의 구조 과정, 그리고 사건의 전말이 시간 순으로 나타나 있습니다.",
+			"그 영상은 시간 순서대로 아들의 손가락이 개집에 끼인 장면, 구급대원들의 구조 활동, 그리고 전체 사건의 결말을 보여줍니다.",
+			"비디오는 아들의 손가락이 개 집의 구멍에 걸린 상황부터 구조대의 구조 작업, 사건의 종결까지를 차례대로 담고 있습니다."
+		]
+	]
+}
+
+{
+	[ 
+           {"score":
